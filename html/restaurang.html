@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodieFiesta</title>
+    <link rel="stylesheet" href="../css/restaurang.css">
+    <!-- <link rel="icon" type="image/x-icon" href=""> -->
+</head>
+<body>
+    
+    <header>
+        <h1 class="bigTitle"><a id="headerLink" href="../html/index.html">FoodieFiesta</a></h1>
+    </header>
+    
+    <nav id="topNav">
+        <a class="navLinks" href=".">Hem</a>
+        <a class="navLinks" href="../html/recept.html">Recept</a>
+        <a class="navLinks" href="../html/restaurang.html">Restauranger</a>
+        <a class="navLinks" href="#footer">Kontakt</a>
+    </nav>
+
+    <figure id="heroImg">
+        <figcaption id="heroCaption">
+            <h2 id="figcaptionTitle">Restauranger</h2>
+            <h3 id="figcaptionText">Här hittar du restauranger för alla livets tillfällen</h3>
+        </figcaption>
+    </figure>
+
+    <main>
+        <nav id="mainNav">
+            <h2>Vart vill du äta?</h2>
+
+            <input type="text" id="locationSearch" onkeyup="filter()" placeholder="Sök...">
+
+            <ul id="locations">
+                <li class="city"><a href="#">Göteborg</a></li>
+                <li class="city"><a href="#">Malmö</a></li>
+                <li class="city"><a href="#">Stockholm</a></li>
+                <li class="city"><a href="#">Uppsala</a></li>
+                <li class="city"><a href="#">Skövde</a></li>
+                <li class="city"><a href="#">Norrköping</a></li>
+                <li class="city"><a href="#">Jönköping</a></li>
+                <li class="city"><a href="#">Luleå</a></li>
+                <li class="city"><a href="#">Arvidsjaur</a></li>
+            </ul>
+
+            <script src="../js/resturantListFilter.js"></script>
+        </nav>
+
+        <section id="restaurants">
+
+            <h2 class="mainTitles">Tillgängliga restauranger</h2>
+
+            <div class="cardContainer">
+                <article class="card">
+                    <img class="cardImg" src="../media/card_images/LassePaHeden.png" alt="Bild på Lasse på Heden">
+                
+                    <article class="cardText">
+                        <h3>Lasse på heden</h3>
+                        <h3>Ett klassisk Göteborgs gatukök</h3>
+                    </article>
+                
+                    <p><button id="lasseButton">Mer info</button></p>
+                </article>
+                
+                <article class="card">
+                    <img class="cardImg" src="../media/card_images/saluhallen.png" alt="Bild på Saluhallen">
+                
+                    <article class="cardText">
+                        <h3>Saluhallen</h3>
+                        <h3>Västsveriges största matmarknad</h3>
+                    </article>
+                
+                    <p><button id="saluhallenButton">Mer info</button></p>
+                </article>
+                
+                <article class="card">
+                    <img class="cardImg" src="../media/card_images/laTerrazza.png" alt="Bild på La Terrazza">
+                
+                    <article class="cardText">
+                        <h3>La Terrazza</h3>
+                        <h3>Mysig italiensk restaurang</h3>
+                    </article>
+                
+                    <p><button id="laTerrazzaButton">Mer info</button></p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <article id="restaurantInfo">
+        <article id="lassePaHedenInfo">
+            <h2 class="mainTitles">Lasse på Heden</h2>
+
+            <p class="infoText">
+                Lasse på Heden är en ikonisk gatukrog i Göteborg, känd för sina klassiska och generösa serveringar av korv och hamburgare. Belägen nära Heden, en populär mötesplats och evenemangsyta, har krogen blivit ett favoritställe för både lokalbor och besökare sedan starten. Med en meny som erbjuder allt från saftiga burgare till välgrillade korvar, ofta med fokus på enkelhet och kvalitet, lockar Lasse på Heden hungriga gäster dygnet runt. Dess avslappnade atmosfär och centrala läge gör det till ett givet val för ett snabbt och gott mål mat i Göteborg.
+            </p>
+        </article>
+
+        <article id="saluhallenInfo">
+            <h2 class="mainTitles">Saluhallen</h2>
+
+            <p class="infoText">
+                Saluhallen i Göteborg är en av stadens mest älskade matdestinationer, belägen i hjärtat av centrum vid Kungstorget. Den historiska byggnaden, som öppnade 1889, bjuder på en charmig och livlig atmosfär där matälskare kan utforska smaker från både lokala och internationella kök. Med över 40 handlare erbjuder saluhallen ett brett utbud av färska råvaror, delikatesser, ostar, kött, fisk och kryddor, samt små restauranger och kaféer där man kan njuta av en god lunch eller fika. Saluhallen är en självklar mötesplats för både göteborgare och besökare som söker kvalitet och äkta matglädje.
+            </p>
+        </article>
+
+        <article id="laTerrazzaInfo">
+            <h2 class="mainTitles">La Terrazza</h2>
+
+            <p class="infoText">
+                La Terrazza är en klassisk italiensk restaurang belägen på Sten Sturegatan 19 i Göteborg, mitt emot Scandinavium. Restaurangen erbjuder en bred à la carte-meny med många klassiska italienska rätter samt en pizzameny. På sommaren finns en härlig uteservering där gäster kan njuta av maten utomhus.
+            </p>
+        </article>
+
+        <article id="restaurantPerkInfo">
+            <h2 class="mainTitles">Restauranger</h2>
+
+            <p class="infoText">
+                Restauranger spelar en central roll i vårt samhälle, inte bara som platser där vi kan äta god mat, utan också som mötesplatser, kulturella uttryck och ekonomiska motorer. De erbjuder en plats för människor att samlas, fira speciella tillfällen, eller bara ta en paus från vardagen. Restauranger speglar ofta den lokala kulturen och traditionerna, samtidigt som de kan introducera smaker och rätter från hela världen, vilket främjar mångfald och förståelse mellan olika kulturer. Ekonomiskt sett är restauranger viktiga arbetsgivare och stöder lokala leverantörer genom att köpa in råvaror, vilket stärker den regionala ekonomin. De bidrar också till stadens puls och identitet, särskilt genom att skapa unika matupplevelser som lockar både lokalbor och turister. Dessutom kan restauranger spela en nyckelroll i att främja hållbarhet genom att erbjuda klimatsmarta menyer, minska matsvinn och använda sig av lokalt producerade råvaror. De fungerar också som arenor för kreativa uttryck, där kockar och matkonstnärer kan utforska och dela sina passioner. I grunden är restauranger viktiga eftersom de förenar människor kring en av livets mest grundläggande och njutbara aktiviteter: att dela en måltid tillsammans.
+            </p>
+        </article>
+
+        <script src="../js/restaurantInfo.js"></script>
+    </article>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodieFiesta</title>
+    <link rel="stylesheet" href="../css/recept.css">
+    <!-- <link rel="icon" type="image/x-icon" href=""> -->
+</head>
+<body>
+
+    <header>
+        <h1 class="bigTitle"><a id="headerLink" href="../html/index.html">FoodieFiesta</a></h1>
+    </header>
+    
+    <nav>
+        <a class="navLinks" href=".">Hem</a>
+        <a class="navLinks" href="../html/recept.html">Recept</a>
+        <a class="navLinks" href="../html/restaurang.html">Restauranger</a>
+        <a class="navLinks" href="#footer">Kontakt</a>
+    </nav>
+
+    <figure id="heroImg">
+        <figcaption id="heroCaption">
+            <h2 id="figcaptionTitle">Recept</h2>
+            <h3 id="figcaptionText">Här hittar du recept för alla typer av middagar, från nyår till lunch dagen efter</h3>
+        </figcaption>
+    </figure>
+
+    <section>
+        <h2 class="cardTitles">Populära recept just nu</h2>
+
+        <div id="receptContainer" class="cardContainer">
+            <article class="card">
+                <img class="cardImg" src="../misc/card_images/hamburgare.jpg" alt="Bild på hamburgare">
+            
+                <article class="cardText">
+                    <h3>Hamburgare</h3>
+                    <h3>En saftig hamburgare för hela familjen</h3>
+                </article>
+            
+                <p><button id="hamburgareButton">Till recept</button></p>
+            </article>
+            
+            <article class="card">
+                <img class="cardImg" src="../media/card_images/pastaCarbonara.png" alt="Bild på pasta carbonara">
+            
+                <article class="cardText">
+                    <h3>Carbonara</h3>
+                    <h3>Klassisk italiensk pasta</h3>
+                </article>
+            
+                <p><button id="carbonaraButton">Till recept</button></p>
+            </article>
+            
+            <article class="card">
+                <img class="cardImg" src="../media/card_images/chiliConCarne.png" alt="Bild på chili con carne">
+            
+                <article class="cardText">
+                    <h3>Chili Con Carne</h3>
+                    <h3>Köttgryta från Mexiko</h3>
+                </article>
+            
+                <p><button id="chiliConCarneButton">Till recept</button></p>
+            </article>
+        </div>
+    </section>
+
+    <article id="reviewAndReceptContainer">
+        <aside id="receptAside">
+            
+            <h2 id="receptTitle" class="bigTitle">Recept</h2>
+
+            <div id="hamburgareRecept" class="opendRecept">
+                <h2 class="receptTitles">(för fyra portioner)</h2>
+
+                <h3 class="receptTitles">Ingredienter</h3>
+                
+                <ul class="receptList">
+                    <li>600 g spagetti</li>
+                    <li>150 g pancetta (eller bacon), tärnad</li>
+                    <li>2 vitlöksklyftor, hela men lätt krossade</li>
+                    <li>3 äggulor</li>
+                    <li>1 helt ägg</li>
+                    <li>100 g riven parmesanost (eller pecorino)</li>
+                    <li>Salt och nymalen svartpeppar</li>
+                    <li>1 msk olivolja</li>
+                </ul>
+                
+                <h3 class="receptTitles">Instruktion</h3>
+                
+                <ol class="receptList">
+                    <li>Koka pasta pastan i saltat vatten, spara 1 dl vatten när du häller av</li>
+                    <li>Stek pancettan tillsammans med vitlöken i en stakpanna på medelhög värme</li>
+                    <li>Blanda ihop äggen och parmesanen i en skål med mycket peppar</li>
+                    <li>Häll ner den kokade pastan till i stekpanna med pancettan</li>
+                    <li>Tillsätt ägg-såsen till stekpannan och blanda i pastavatten tills såsen blir krämig</li>
+                </ol>
+            </div>
+
+            <div id="carbonaraRecept" class="opendRecept">
+                <h2 class="receptTitles">(för fyra portioner)</h2>
+                
+                <h3 class="receptTitles">Ingredienter</h3>
+                
+                <ul class="receptList">
+                    <li>600 g nötfärs (gärna 15-20% fett)</li>
+                    <li>1 tsk salt</li>
+                    <li>1 tsk nymalen svartpeppar</li>
+                    <li>1 msk worcestershiresås (valfritt)</li>
+                    <li>1 msk olivolja eller smör till stekning</li>
+                    <li>4 hamburgerbröd</li>
+                    <li>Valfria andra toppings (tex. tomat, ost och sallad)</li>
+                </ul>
+                
+                <h3 class="receptTitles">Instruktion</h3>
+                
+                <ol class="receptList">
+                    <li>Blanda nötfärsen, salt, peppar och worcestershiresås i en skål</li>
+                    <li>Forma färsen till fyra lika stora biffar</li>
+                    <li>Stek biffar i 3-4 minuter per sida på hög värme</li>
+                    <li>Montera hamburgarna efter egna preferenser</li>
+                </ol>
+            </div>
+
+            <div id="chiliConCareRecept" class="opendRecept">
+                <h2 class="receptTitles">(för fyra portioner)</h2>
+                
+                <h3 class="receptTitles">Ingredienter</h3>
+                
+                <ul class="receptList">
+                    <li>500 g nötfärs</li>
+                    <li>1 gul lök</li>
+                    <li>2 vitlöksklyftor</li>
+                    <li>1 röd paprika</li>
+                    <li>1 burk (400 g) krossade tomater</li>
+                    <li>2 msk tomatpuré</li>
+                    <li>1 burk (400 g) röda kidneybönor</li>
+                    <li>1 dl vatten eller köttbuljong</li>
+                    <li>1 msk olivolja</li>
+                    <li>1 tsk chilipulver</li>
+                    <li>1 tsk spiskummin</li>
+                    <li>1 tsk paprikapulver</li>
+                    <li>1 tsk torkad oregano</li>
+                    <li>1 nypa socker</li>
+                    <li>Salt och nymalen svartpeppar</li>
+                    <li>Färsk koriander (till garnering, valfritt)</li>
+                </ul>
+                
+                <h3 class="receptTitles">Instruktion</h3>
+                
+                <ol class="receptList">
+                    <li>Stek köttfärsen tillsammans lök och vitlök på medelhög värme</li>
+                    <li>Tillsätt chilipulver, spiskummin, paprikapulver och oregano och låt steka i 1 minut till</li>
+                    <li>Tillsätt de krossade tomaterna, tomatpurén, paprika samt vatten eller buljong</li>
+                    <li>Låt puttra i 20-30 min</li>
+                    <li>Tillsätt kidneybönorna</li>
+                    <li>Servera varmt</li>
+                </ol>
+            </div>
+        </aside>
+
+        <aside id="review">
+            <h2 class="cardTitles">Recentioner</h2>
+            
+            <div id="reviewContainer" class="cardContainer">
+                <article class="receptCard">            
+                    <article class="receptCardText">
+                        <h3>Hamburgare</h3>
+                        <h3>Hamburgaren var fantastisk, hela familjen älskade den och vi kommer laga hamburgare igen</h3>
+                    </article>
+                </article>
+            
+                <article class="receptCard">            
+                    <article class="receptCardText">
+                        <h3>Chili Con Carne</h3>
+                        <h3>Köttet var rått och det fanns chili. Jag är dödsallergiker till allt från Mexiko. 3/5. Hatar bönor.</h3>
+                    </article>
+                </article>
+            
+                <article class="receptCard">            
+                    <article class="receptCardText">
+                        <h3>Hamgurgare</h3>
+                        <h3>Hamburgaren var fantastisk, hela familjen älskade den och vi kommer laga hamburgare igen</h3>
+                    </article>
+                </article>
+            </div>
+        </aside>
+
+        <script src="../js/recept.js"></script>
+    </article>
+    
+    <footer>
+
+    </footer>
+</body>
+</html>
