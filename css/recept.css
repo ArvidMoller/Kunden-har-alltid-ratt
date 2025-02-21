@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 10% 40% auto 90% 10%;
+    grid-template-columns: 60% 40%;
+    grid-template-areas:
+    'hd nav'
+    'fg fg'
+    'mn mn'
+    'receptContainer receptContainer'
+    'ft ft';
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2%;
+    grid-area: hd;
+    background-color: rgb(230, 126, 34);
+}
+
+#headerLink{
+    text-decoration: none;
+    color: #000; 
+}
+
+.bigTitle {
+    font-size: 4vw;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2vw;
+    grid-area: nav;
+    background-color: rgb(230, 126, 34);
+}
+
+.navLinks {
+    text-decoration: none;
+    color: black;
+
+    transition: all 0.2s ease;
+}
+
+.navLinks:hover {
+    color: rgb(88, 72, 56);
+}
+
+#heroImg {
+    display: flex;
+    grid-area: fg;
+    background-image: url(../media/hero_images/hero_recept.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 60%;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#heroCaption {
+    background-color: rgb(230, 126, 34);
+
+    text-align: center;
+
+    padding: 0.5em;
+    border-radius: 0.7em;
+}
+
+#figcaptionTitle {
+    font-size: 7.5vh;
+}
+
+#figcaptionText {
+    font-size: 4vh;
+}
+
+section{
+    grid-area: mn;
+    background-color: rgb(230, 126, 34);
+
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    
+    text-align: center;
+}
+
+.cardTitles{
+    font-size: 7.5vh;
+    padding-top: 0.5vw;
+}
+
+.cardContainer{
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+
+    padding: 1rem;
+}
+
+.card {
+    border: solid 0.4vw black;
+    display: flex;
+    flex-direction: row;
+
+    max-width: 30vw;
+    text-align: center;
+}
+
+.cardImg{
+    width: 50%;
+}
+  
+.cardText{
+    display: flex;
+    flex-wrap: wrap;
+
+    font-size: 2.5vh;
+
+    padding: 3%;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    height: 100%;
+    font-size: 1.2rem;
+    width: auto;
+
+    transition: all 0.2s ease;
+}
+  
+.card button:hover {
+    opacity: 0.7;
+}
+
+#reviewAndReceptContainer{
+    grid-area: receptContainer;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'recept review';
+}
+
+#receptTitle{
+    text-align: center;
+    padding-bottom: 1vh;
+}
+
+#receptAside{
+    grid-area: recept;
+    background-color: rgb(230, 126, 34);
+    overflow: auto;
+    direction: rtl;
+}
+
+.opendRecept{
+    padding-bottom: 1vh;
+    direction: ltr;
+}
+
+#review{
+    grid-area: review;
+    text-align: center;
+    background-color: rgb(230, 126, 34);
+}
+
+.receptList{
+    font-size: 3vh;
+    padding-left: 10vh;
+}
+
+.receptTitles{
+    text-align: center;
+    font-size: 4vh;
+    padding: 2vh;
+}
+
+#reviewContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.receptCard {
+    border: solid 0.4vw black;
+    display: flex;
+    flex-direction: row;
+
+    width: 30vw;
+    height: 7.5vw;
+    text-align: center;
+}
+
+.receptCardText {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-content: space-around;
+    font-size: 2.5vh;
+}
+
+footer{
+    grid-area: ft;
+    background-image: url(../media/hero_images/hero_recept.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10%;
+}
